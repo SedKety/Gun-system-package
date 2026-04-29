@@ -3,8 +3,8 @@ using UnityEngine;
 /// <summary>
 /// This module is responsible for shooting projectiles from the gun. 
 /// </summary>
-[CreateAssetMenu(fileName = "New Shooter Module", menuName = "Modulair Gun/Modules/Shooter Module")]
-public class ShooterModule : ScriptableObject, IModule
+[CreateAssetMenu(fileName = "New Shooter Module", menuName = "Gun System/Modules/Shooter Module")]
+public class ShooterModule : ScriptableObject, IGunModule
 {
 
     [SerializeField, InterfaceField(typeof(IProjectileFactory), typeof(ScriptableObject))]
@@ -19,13 +19,13 @@ public class ShooterModule : ScriptableObject, IModule
     public void InitializeModule(ModularGun mg)
     {
         // When the gun is shot, we want to create a bullet at the shoot point.
-        mg.AddOnShootEvent(() =>
+        mg.SubscribeToOnShootEvent(() =>
         {
             var projectile = ProjectileFactory.CreateProjectile(mg.ShootPoint);
         });
     }
 
-    public void UpdateModule(ModularGun mg)
+    public void RecomputeModule(ModularGun mg)
     {
         
     }
