@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0d9e5fc34204f4d8c65ac3f50b6576, type: 3}
   m_Name: Basic Bullet Factory
   m_EditorClassIdentifier: Assembly-CSharp::SimpleBulletFactory
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: e9a9aba941402c848bbd9b145a472b01, type: 2}

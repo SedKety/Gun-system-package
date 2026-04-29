@@ -4,12 +4,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Modulair gun to mog Mairo's pathetic display of his gun system. 
-/// This class serves as the core component of a modular gun system, 
-/// allowing for dynamic addition and management of various modules that can enhance or modify the gun's behavior. 
+/// Modular gun implementation to show a friend of mine how inheritance, 
+/// abstraction and composition can be used together to create a flexible and extensible gun system.
 /// </summary>
 [RequireComponent(typeof(PlayerInput))]
-public class ModulairGun : MonoBehaviour
+public class ModularGun : MonoBehaviour
 {
     #region Variables
 

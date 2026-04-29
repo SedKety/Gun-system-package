@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a64178f720c9848b745c0061fc5027, type: 3}
   m_Name: Basic Bullet Shooter
   m_EditorClassIdentifier: Assembly-CSharp::ShooterModule
-  _projectileFactory: {fileID: 0}
+  _projectileFactory: {fileID: 11400000, guid: 2ff216910bcbd164ea86713a00388e84, type: 2}

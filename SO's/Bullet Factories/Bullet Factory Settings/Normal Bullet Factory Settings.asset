@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd025cda56793764c8038efbd8e8862c, type: 3}
   m_Name: Normal Bullet Factory Settings
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileFactorySettings
-  _projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 6632652060806992850, guid: 2e65bfda2be0ec44c8af7388f1b88958, type: 3}
